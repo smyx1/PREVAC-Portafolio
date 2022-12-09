@@ -129,6 +129,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="registrarClienteContrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registrarClienteContrato.Designer.cs">
+      <DependentUpon>registrarClienteContrato.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReporteAccidente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +169,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registrarClienteContrato.resx">
+      <DependentUpon>registrarClienteContrato.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReporteAccidente.resx">
       <DependentUpon>ReporteAccidente.cs</DependentUpon>
@@ -284,6 +293,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PREVAC %281%29.ico" />
+    <None Include="Resources\PlantillaReporteGlobal.html" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

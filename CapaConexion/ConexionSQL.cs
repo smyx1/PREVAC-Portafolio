@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -11,6 +12,26 @@ namespace CapaConexion
 {
     public class ConexionSQL
     {
+
+        static private string conexionCadena = "Server=tcp:appportafolio.database.windows.net,1433;Initial Catalog=prevac;Persist Security Info=False;User ID=portafolioadmin;Password=Matias14+;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private SqlConnection Conexion = new SqlConnection(conexionCadena);
+
+        public SqlConnection AbrirConexion()
+        {
+            if (Conexion.State == ConnectionState.Closed)
+                Conexion.Open();
+            return Conexion;
+        }
+
+        public SqlConnection ConexionCerrar()
+        {
+            if (Conexion.State == ConnectionState.Open)
+                Conexion.Close();
+            return Conexion;
+        }
+
+
+
         private string nombreBaseDatos;
         private string nombreTabla;
         private string cadenaConexion;
@@ -142,9 +163,15 @@ namespace CapaConexion
         {
             SqlConnection cn = new SqlConnection("Server=tcp:appportafolio.database.windows.net,1433;Initial Catalog=prevac;Persist Security Info=False;User ID=portafolioadmin;Password=Matias14+;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
             cn.Open();
+
+        
             return cn;
+
+            
         }
 
+
+      
         //public static void Main(String[] args)
         //{
         //    ConexionSQL auxConexion = new ConexionSQL();
