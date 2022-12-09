@@ -43,9 +43,11 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.cboUsuario = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblUbicacion
@@ -141,6 +143,7 @@
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(42)))), ((int)(((byte)(75)))));
+            this.panelTitleBar.Controls.Add(this.pictureBox1);
             this.panelTitleBar.Controls.Add(this.label2);
             this.panelTitleBar.Controls.Add(this.pictureBox2);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -208,6 +211,17 @@
             this.cboUsuario.TabIndex = 169;
             this.cboUsuario.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CapaGUI.Properties.Resources.btnClose;
+            this.pictureBox1.Location = new System.Drawing.Point(763, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(25, 25);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 170;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // AgregarUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -232,6 +246,7 @@
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,5 +267,6 @@
         internal System.Windows.Forms.TextBox txtPassword;
         internal System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.ComboBox cboUsuario;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
