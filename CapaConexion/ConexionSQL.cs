@@ -13,8 +13,8 @@ namespace CapaConexion
     public class ConexionSQL
     {
 
-        static private string conexionCadena = "Server=tcp:appportafolio.database.windows.net,1433;Initial Catalog=prevac;Persist Security Info=False;User ID=portafolioadmin;Password=Matias14+;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
-        private SqlConnection Conexion = new SqlConnection(conexionCadena);
+        static public  string conexionCadena = "Server=tcp:appportafolio.database.windows.net,1433;Initial Catalog=prevac;Persist Security Info=False;User ID=portafolioadmin;Password=Matias14+;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        public SqlConnection Conexion = new SqlConnection(conexionCadena);
 
         public SqlConnection AbrirConexion()
         {

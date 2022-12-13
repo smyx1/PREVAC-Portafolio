@@ -19,7 +19,7 @@ using iTextSharp.text;
 using iTextSharp.tool.xml.css.parser.state;
 using System.util;
 using CapaDTO;
-
+using CapaNegocio;
 namespace CapaGUI
 {
 

@@ -35,7 +35,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelLateral = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnClientes = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -109,7 +108,6 @@
             this.panelLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(42)))), ((int)(((byte)(75)))));
             this.panelLateral.Controls.Add(this.button1);
             this.panelLateral.Controls.Add(this.lblmensajeProfesional);
-            this.panelLateral.Controls.Add(this.btnClientes);
             this.panelLateral.Controls.Add(this.lblProfesional);
             this.panelLateral.Controls.Add(this.btnUsers);
             this.panelLateral.Dock = System.Windows.Forms.DockStyle.Left;
@@ -139,26 +137,6 @@
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnClientes
-            // 
-            this.btnClientes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClientes.FlatAppearance.BorderSize = 0;
-            this.btnClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClientes.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClientes.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.Location = new System.Drawing.Point(-6, 216);
-            this.btnClientes.Margin = new System.Windows.Forms.Padding(2);
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnClientes.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnClientes.Size = new System.Drawing.Size(230, 45);
-            this.btnClientes.TabIndex = 26;
-            this.btnClientes.Text = "Clientes";
-            this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnClientes.UseVisualStyleBackColor = true;
             // 
             // btnUsers
             // 
@@ -241,7 +219,6 @@
         private System.Windows.Forms.Label lblmensajeProfesional;
         private System.Windows.Forms.Panel panelSuperior;
         private System.Windows.Forms.Panel panelLateral;
-        internal System.Windows.Forms.Button btnClientes;
         internal System.Windows.Forms.Button btnUsers;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;

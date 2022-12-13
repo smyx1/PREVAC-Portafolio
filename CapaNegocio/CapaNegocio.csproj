@@ -49,7 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="negocioProfesional.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registrarCliente.cs" />
+    <Compile Include="registrarServicio.cs" />
+    <Compile Include="tipo_usuario.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -71,6 +75,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaConexion\CapaConexion.csproj">
+      <Project>{800d4041-3427-4fbf-95e4-b077f936b148}</Project>
+      <Name>CapaConexion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaDTO\CapaDTO.csproj">
+      <Project>{54b6bf34-f083-4391-a95d-36cac5db9be2}</Project>
+      <Name>CapaDTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

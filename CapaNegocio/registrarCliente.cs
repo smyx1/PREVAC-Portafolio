@@ -13,7 +13,7 @@ namespace CapaDTO
     {
         private ConexionSQL conexion = new ConexionSQL();
         private SqlCommand command = new SqlCommand();
-        private SqlDataReader read;
+        private SqlDataReader LeerFilas;
 
         public DataTable ListarRol()
         {
@@ -21,9 +21,9 @@ namespace CapaDTO
             command.Connection = conexion.AbrirConexion();
             command.CommandText = "ListarRol";
             command.CommandType = CommandType.StoredProcedure;
-            read = command.ExecuteReader();
-            Tabla.Load(read);
-            read.Close();
+            LeerFilas = command.ExecuteReader();
+            Tabla.Load(LeerFilas);
+            LeerFilas.Close();
             conexion.ConexionCerrar();
             return Tabla;
         }
@@ -34,9 +34,9 @@ namespace CapaDTO
             command.Connection = conexion.AbrirConexion();
             command.CommandText = "ListarEstado";
             command.CommandType = CommandType.StoredProcedure;
-            read = command.ExecuteReader();
-            Tabla.Load(read);
-            read.Close();
+            LeerFilas = command.ExecuteReader();
+            Tabla.Load(LeerFilas);
+            LeerFilas.Close();
             conexion.ConexionCerrar();
             return Tabla;
         }

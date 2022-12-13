@@ -7,7 +7,7 @@
     <ProjectGuid>{5E222AED-05E3-46EF-95FA-91CB6850B48A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>CapaGUI</RootNamespace>
-    <AssemblyName>CapaGUI</AssemblyName>
+    <AssemblyName>PREVAC</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -52,7 +52,7 @@
     <StartupObject />
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>PREVAC %281%29.ico</ApplicationIcon>
+    <ApplicationIcon>PREVAC.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>5C05719EA820C80E8F85262540D7C37478A14A46</ManifestCertificateThumbprint>
@@ -97,6 +97,12 @@
     </Compile>
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarServicio.Designer.cs">
+      <DependentUpon>AgregarServicio.cs</DependentUpon>
     </Compile>
     <Compile Include="AgregarUsuario.cs">
       <SubType>Form</SubType>
@@ -153,6 +159,9 @@
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AgregarServicio.resx">
+      <DependentUpon>AgregarServicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AgregarUsuario.resx">
       <DependentUpon>AgregarUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -202,6 +211,10 @@
     <ProjectReference Include="..\CapaDTO\CapaDTO.csproj">
       <Project>{54b6bf34-f083-4391-a95d-36cac5db9be2}</Project>
       <Name>CapaDTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{21c52eec-7129-481e-a7ba-31deecc49e59}</Project>
+      <Name>CapaNegocio</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -293,6 +306,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="PREVAC %281%29.ico" />
+    <Content Include="PREVAC.ico" />
     <None Include="Resources\PlantillaReporteGlobal.html" />
   </ItemGroup>
   <ItemGroup>

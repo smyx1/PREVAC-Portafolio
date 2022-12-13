@@ -32,7 +32,6 @@
             this.lblAdmin = new System.Windows.Forms.Label();
             this.panelLateral = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.btnReportarAtraso = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
             this.panelSuperior = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -40,6 +39,7 @@
             this.PanelForm = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelLateral.SuspendLayout();
             this.panelSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -73,8 +73,8 @@
             // panelLateral
             // 
             this.panelLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(42)))), ((int)(((byte)(75)))));
+            this.panelLateral.Controls.Add(this.button1);
             this.panelLateral.Controls.Add(this.button2);
-            this.panelLateral.Controls.Add(this.btnReportarAtraso);
             this.panelLateral.Controls.Add(this.btnUsers);
             this.panelLateral.Controls.Add(this.lblmensajeAdmin);
             this.panelLateral.Controls.Add(this.lblAdmin);
@@ -104,25 +104,6 @@
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // btnReportarAtraso
-            // 
-            this.btnReportarAtraso.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReportarAtraso.FlatAppearance.BorderSize = 0;
-            this.btnReportarAtraso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReportarAtraso.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportarAtraso.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnReportarAtraso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportarAtraso.Location = new System.Drawing.Point(-11, 247);
-            this.btnReportarAtraso.Margin = new System.Windows.Forms.Padding(2);
-            this.btnReportarAtraso.Name = "btnReportarAtraso";
-            this.btnReportarAtraso.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnReportarAtraso.Size = new System.Drawing.Size(230, 45);
-            this.btnReportarAtraso.TabIndex = 29;
-            this.btnReportarAtraso.Text = "Reporte global";
-            this.btnReportarAtraso.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportarAtraso.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnReportarAtraso.UseVisualStyleBackColor = true;
             // 
             // btnUsers
             // 
@@ -209,6 +190,26 @@
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.DarkGray;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(-8, 251);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(230, 45);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "Agregar servicio";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -239,7 +240,6 @@
         private System.Windows.Forms.Label lblAdmin;
         private System.Windows.Forms.Panel panelLateral;
         private System.Windows.Forms.Panel panelSuperior;
-        internal System.Windows.Forms.Button btnReportarAtraso;
         internal System.Windows.Forms.Button btnUsers;
         private System.Windows.Forms.Panel PanelForm;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -247,5 +247,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
         internal System.Windows.Forms.Button button2;
+        internal System.Windows.Forms.Button button1;
     }
 }
